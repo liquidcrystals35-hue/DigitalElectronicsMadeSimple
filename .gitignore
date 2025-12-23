@@ -1,0 +1,22 @@
+# --- LaTeX 编译垃圾 ---
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.xdv
+
+# --- 你的 build 文件夹 (一定要忽略！) ---
+build/
+
+# --- PDF 产物 (通常不存 Git，或者只存最终版) ---
+*.pdf
+
+# --- VS Code 配置 (可选，如果你不想同步你的编辑器设置) ---
+.vscode/
+
+# --- 系统垃圾 ---
+.DS_Store
+Thumbs.db

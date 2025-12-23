@@ -1,0 +1,32 @@
+\PassOptionsToPackage{fontset=fandol}{ctex} % 1. 先偷偷告诉 ctex：我要用 fandol 字体
+\documentclass[lang=cn, mode=fancy, 11pt, fontset=ctex]{elegantbook}
+\usepackage{graphicx} % Required for inserting images
+
+%封面设置
+\title{通俗数字电子技术讲义}
+\author{Liquidcrystals}
+\date{december 2025}
+
+
+
+\cover{cover.png}  % 封面背景图 (ElegantBook 自带如果不指定会用默认颜色)
+\logo{logo.png}   % 封面上的小 Logo
+
+
+
+\begin{document}
+
+\maketitle
+\frontmatter
+\input{chapter/front.tex}
+\setcounter{tocdepth}{0} % 0=只显示章, 1=显示章+节, 2=显示章+节+小节
+\tableofcontents
+\mainmatter
+\input{chapter/chapter1.tex}
+
+
+\end{document}
+
+
+
+
